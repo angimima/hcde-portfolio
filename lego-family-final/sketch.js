@@ -56,10 +56,12 @@ function smLego (x, y, r, g, b) { // making a function for small lego size and w
   fill(r, g, b); // options for color
   rect(x, y, legoWidth, smLegoHeight); // options for location, set width and height
 }
+
 function medLego (x, y, r, g, b) { // making a function for medium size lego size and with color represented by rgb
   fill(r, g, b); // options for color
   rect(x, y, legoWidth, medLegoHeight); // options for location, set width and height
 }
+
 function lgLego (x, y, r, g, b) { // making a function for large size lego size and with color represented by rgb
   fill(r, g, b); // options for color
   rect(x, y, legoWidth, lgLegoHeight); // options for location, set width and height
@@ -86,10 +88,10 @@ function fred() {
   
 // moving and stopping fred
   if (xPosition < 200) { // move fred until he gets to x position of 200
-  fredXMovement += fredSpeed; // direction and speed of movement along x axis
+    fredXMovement += fredSpeed; // direction and speed of movement along x axis
   }
   if (yPosition < 240) { // move fred until a final y coordinate
-  fredYMovement += fredSpeed; // direction and speed of movement along y axis
+    fredYMovement += fredSpeed; // direction and speed of movement along y axis
   }
 }
 
@@ -97,7 +99,7 @@ function fred() {
 function daphne() {
   var xPosition = daphneXMovement; // starting X position
   var yPosition = daphneYMovement; // feet Y position
-  var offSet = 0; // starting y postion of character
+  var offSet = 0; // starting y position of character
   lgLego (xPosition, yPosition, 122, 104, 174); // dress bottom
   offSet += lgLegoHeight; // stacking the next block on top by height of the next lego
   lgLego (xPosition, yPosition - offSet, 187, 169, 210); // dress top y postion starting at bottom of block subtracting size of block before
@@ -108,10 +110,10 @@ function daphne() {
   
 // moving and stopping daphne
   if (xPosition < 260) { // move daphne until she gets to fred's position plus 40 for width plus 20 for spacing
-  daphneXMovement += daphneXSpeed; // direction and speed of movement along x axis
+    daphneXMovement += daphneXSpeed; // direction and speed of movement along x axis
   }
   if (yPosition > 240) { // move daphne until she gets next to fred on the y coordinate
-  daphneYMovement += daphneYSpeed; // direction and speed of movement along y axis
+    daphneYMovement += daphneYSpeed; // direction and speed of movement along y axis
   }
 }
 
@@ -119,7 +121,7 @@ function daphne() {
 function vilma() {
   var xPosition = vilmaXMovement; // starting X position
   var yPosition = vilmaYMovement; // feet Y position
-  var offSet = 0; // starting y postion of character
+  var offSet = 0; // starting y position of character
   lgLego (xPosition, yPosition, 198, 31, 72); // dress bottom
   offSet += medLegoHeight; // stacking the next block on top by height of the next lego
   medLego (xPosition, yPosition - offSet, 248, 152, 33); // dress top y postion starting at bottom of block subtracting size of block before
@@ -130,10 +132,10 @@ function vilma() {
   
 // moving and stopping vilma
   if (xPosition > 400) { // move vilma until she gets to scooby's position plus 40 for width plus 20 for spacing
-  vilmaXMovement += vilmaXSpeed; // direction and speed of movement along x axis
+    vilmaXMovement += vilmaXSpeed; // direction and speed of movement along x axis
   }
   if (yPosition < 240) { // move vilma until she gets next to fred on the y coordinate
-  vilmaYMovement += vilmaYSpeed; // direction and speed of movement along y axis
+    vilmaYMovement += vilmaYSpeed; // direction and speed of movement along y axis
   }
 }
 
@@ -141,7 +143,7 @@ function vilma() {
 function shaggy() {
   var xPosition = shaggyXMovement; // starting X position
   var yPosition = shaggyYMovement; // feet Y position
-  var offSet = 0; // starting y postion of character
+  var offSet = 0; // starting y position of character
   lgLego (xPosition, yPosition, 181, 83, 64 ); // pants
   offSet += medLegoHeight; // stacking the next block on top by height of the next lego
   medLego (xPosition, yPosition - offSet, 181, 83, 64); // pants
@@ -154,10 +156,10 @@ function shaggy() {
   
 // moving and stopping shaggy
   if (xPosition > 460) { // move shaggy until he gets to vilma's position plus 40 for width plus 20 for spacing
-  shaggyXMovement += shaggyXSpeed; // direction and speed of movement along x axis
+    shaggyXMovement += shaggyXSpeed; // direction and speed of movement along x axis
   }
   if (yPosition > 240) { // move shaggy until he gets next to fred on the y coordinate
-  shaggyYMovement += shaggyYSpeed; // direction and speed of movement along y axis
+    shaggyYMovement += shaggyYSpeed; // direction and speed of movement along y axis
   }
 }  
   
@@ -165,7 +167,7 @@ function shaggy() {
 function scooby() {
   var xPosition = scoobyXMovement; // starting X position
   var yPosition = scoobyYMovement; // feet Y position
-  var offSet = 0; // starting y postion of character
+  var offSet = 0; // starting y position of character
   lgLego (xPosition, yPosition, 176, 112, 41); // bottom of body
   offSet += medLegoHeight; // stacking the next block on top by height of the next lego
   medLego (xPosition, yPosition - offSet, 176, 112, 41); // top of body
@@ -178,9 +180,9 @@ function scooby() {
   
 // moving and stopping scooby
   if (xPosition > 320) { // move scooby until he gets to daphne's position plus 40 for width plus 20 for spacing
-  scoobyXMovement += scoobyXSpeed; // direction and speed of movement along x axis
+    scoobyXMovement += scoobyXSpeed; // direction and speed of movement along x axis
   }
   if (yPosition > 240) { // move scooby until he gets next to fred on the y coordinate
-  scoobyYMovement += scoobyYSpeed; // direction and speed of movement along y axis
+    scoobyYMovement += scoobyYSpeed; // direction and speed of movement along y axis
   }
 }  
