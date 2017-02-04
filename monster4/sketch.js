@@ -28,27 +28,29 @@ function draw() {
   } 
   // otherwise if not on starting page monster is jumping
   else {
-     jumpValue = jumpValue + jumpDir;
-      if ((jumpValue > 0) || (jumpValue < -50)) { // moves from 0 position to 50
-        // change direction
-        jumpDir = jumpDir * -1; // changes direction when 0 or 50 is reached
+    jumpValue = jumpValue + jumpDir;
+    // moves from 0 position to 50
+    if ((jumpValue > 0) || (jumpValue < -50)) { 
+      // change direction when 0 or 50 is reached
+      jumpDir = jumpDir * -1;  
       }
   }
 }
-  // changes from eye moving monster to jumping monster when mouse is clicked
-  function mousePressed () {
-    page = 1 - page;
-    eyeDirection = 0; // resets eyes to center
-  }
+  
+// changes from eye moving monster to jumping monster when mouse is clicked
+function mousePressed () {
+  page = 1 - page;
+  eyeDirection = 0; // resets eyes to center
+}
 
-// building monster from 4 different functions
+// building monster from different functions
 function monster(x, y) {
   legs(x, y);
   body(x, y);
   eyes(x, y); // calling function and passing parameters to eyes
   pupils(x + eyeDirection, y); // calling function and passing parameters to pupils
-  mouth(x, y); // calls mouth function
-  arms(x, y); // calls arms
+  mouth(x, y); 
+  arms(x, y); 
 }
 
 // builds legs separate from body in case I want to animate later
@@ -75,7 +77,7 @@ function body(x, y) {
   ellipse(x - 96, y + 51, 10, 10); // belly button
 }
 
-// makes the yellow parts of eyes and calls pupils
+// makes the yellow parts of eyes
 function eyes(x, y) {
   fill(255, 204, 0);
   ellipse(x - 120, y - 145, 30, 30);
