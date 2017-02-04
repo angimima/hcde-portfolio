@@ -13,7 +13,7 @@ var smLegoHeight = 5; // height for smallest lego
 var medLegoHeight = 15; // height for medium lego
 var lgLegoHeight = 40; // height for large lego
 var earLegoWidth = 5; // width for ear lego
-var earLegoHeight = 10; // height of ear lego
+var earLegoHeight = 10; // height for ear lego
 
 // Variables to Control Characters Movement
 // fred
@@ -27,17 +27,17 @@ var daphneXSpeed = 1; // variable per character to modify speed and direction mi
 var daphneYSpeed = -1; // variable per character to modify speed and direction minus goes up plus goes down
 // vilma
 var vilmaXMovement = 1090; // start x position
-var vilmaYMovement = 100; // start x position
+var vilmaYMovement = 100; // start y position
 var vilmaXSpeed = -2; // variable per character to modify speed and direction minus goes left plus goes right
 var vilmaYSpeed = 1; // variable per character to modify speed and direction minus goes up plus goes down
 // shaggy
 var shaggyXMovement = 1090; // start x position
-var shaggyYMovement = 350; // start x position
+var shaggyYMovement = 350; // start y position
 var shaggyXSpeed = -2; // variable per character to modify speed and direction minus goes left plus goes right
 var shaggyYSpeed = -1; // variable per character to modify speed and direction minus goes up plus goes down
 // scooby
 var scoobyXMovement = 800; // start x position
-var scoobyYMovement = 300; // start x position
+var scoobyYMovement = 300; // start y position
 var scoobyXSpeed = -2; // variable per character to modify speed and direction minus goes left plus goes right
 var scoobyYSpeed = -1; // variable per character to modify speed and direction minus goes up plus goes down
 
@@ -46,9 +46,9 @@ function draw() {
   noStroke(); // don't want outlines on any legos but need a stroke for the tail line so this is in draw function not setup
   fred(); // calls function for fred legos
   daphne(); // calls function for daphne legos
-  vilma(); // calls function for daphne legos
+  vilma(); // calls function for vilma legos
   shaggy(); // calls function for shaggy legos 
-  scooby(); // calls function for shaggy legos   
+  scooby(); // calls function for scooby legos   
 }
  // drawing reusable lego blocks with the following sm med lg lego functions
  // parameters are for x and y position and rgb colors

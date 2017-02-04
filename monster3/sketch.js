@@ -1,6 +1,10 @@
 /*  Created by Angela Rosette-Tavares
     Program draws a monster and makes his eyes follow mouse or makes him jump if mouse if pressed
+<<<<<<< HEAD
     last edit 1/28/17 3:10pm
+=======
+    last edit 2/6/17 1:26am
+>>>>>>> 02bb39213815dd0f8d35d888d2f757ceecebc0b7
 */ 
 
 function setup() {
@@ -109,4 +113,8 @@ function arms(x, y) {
   line(371, y - 21, 429, y - 68);
   line(248, y - 61, 206, y - 94);
   line(241, y - 22, 183, y - 69);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 02bb39213815dd0f8d35d888d2f757ceecebc0b7

@@ -32,7 +32,7 @@ rect(219, 274, 90, 6);
 // Head
 fill(215, 251, 232);
 ellipse(276, 155, 90, 90);
-fill(157, 243, 196); // nose like circle
+fill(157, 243, 196); // nose-like circle
 ellipse(288, 150, 28, 28);
 fill(11, 64, 156); // little dot
 ellipse(288, 150, 6, 6);

@@ -1,54 +1,42 @@
 function setup() {
-  createCanvas(720, 480); //set dimensios of canvas element
-  background(249, 162, 154);
-  smooth //draws with anti-aliased edge
+  createCanvas(720, 480); // set dimensios of canvas element
+  background(249, 162, 154); // background peach color
+  smooth // draws with anti-aliased edge
   
   // Chair
-  fill(81, 193, 146);
-  arc(430, 300, 400, 400, PI, TWO_PI); //arc for the top part 
-  
-  fill(81, 193, 146);
+  fill(81, 193, 146); // green color
+  arc(430, 300, 400, 400, PI, TWO_PI); // arc for the top part 
   rect(230, 282, 400, 98); // rectangle for the bottom 
   
   // Hair
-  fill(209, 122, 78); 
-  arc(430, 300, 280, 280, PI, TWO_PI); //arc for the top part
-
-  fill(209, 122, 78); // rectangle for the bottom
-  rect(290, 300, 280, 40);
+  fill(209, 122, 78); // brown color
+  arc(430, 300, 280, 280, PI, TWO_PI); // arc for the top part
+  rect(290, 300, 280, 40); // rectangle for the bottom
   
   // Face
-  fill(249, 186, 154);
+  fill(249, 186, 154); // face color
   noStroke // remove outline of face
   arc(430, 310, 240, 240, PI, TWO_PI); // arc for top part
-  
-  fill(249, 186, 154); 
-  noStroke(); // remove outline of face
   rect(310, 300, 240, 40); // rectangle for the bottom
   
   //Ears
-  fill(249, 186, 154);
-  ellipse(550, 300, 20, 40);
-  ellipse(310, 300, 20, 40);  
+  fill(249, 186, 154); // face color
+  ellipse(550, 300, 20, 40); // left ear is a circle behind face with only half showing
+  ellipse(310, 300, 20, 40);  // right ear
   
   // Table
-  fill(27, 115, 170);
-  stroke(0);
-  quad(0, 480, 0, 360, 720, 315, 720, 480); // using 4 points to make a slant
+  fill(27, 115, 170); // blue color
+  stroke(0); // outline for table
+  quad(0, 480, 0, 360, 720, 315, 720, 480); // using 4 points to make table a quadrant for it to slant
   
   // Eyes
-  fill(255);
-  stroke(0);  
-  ellipse(370, 290, 100, 40); //  oval for left eye
-  
-  fill(255);
-  stroke(0);  
+  fill(255); // white color
+  stroke(0);  // outline for eyes
+  ellipse(370, 290, 100, 40); // oval for left eye
   ellipse(485, 290, 100, 40); // oval for right eye
   
-  fill(0);
-  arc(365, 270, 25, 30, TWO_PI, PI); // oval for left pupil
- 
-  fill(0);
+  fill(0); // black color
+  arc(365, 270, 25, 30, TWO_PI, PI); // arc for left pupil radian starts on right
   arc(485, 270, 25, 30, TWO_PI, PI); // arc for right pupil
 
   // Lashes
@@ -83,9 +71,7 @@ function setup() {
   // eyebrows
   noFill();
   arc(365, 260, 75, 40, PI, TWO_PI); // not sure I understand radians but I used the book and played around
-  arc(480, 260, 75, 40, PI, TWO_PI);
+  arc(480, 260, 75, 40, PI, TWO_PI); // arc for eyebrow radian starts on left
   
-
-    
 }
 
