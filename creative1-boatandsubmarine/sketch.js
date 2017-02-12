@@ -1,5 +1,5 @@
   /*  Created by Angela Rosette-Tavares
-    Program draws a boat and submarine and moves them across the screen
+    Program draws a boat and submarine and moves them across the screen. submarine drps periscope when boat gets close
     last edit 2/9/17 4:36pm
 */ 
 
