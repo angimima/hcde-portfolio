@@ -17,7 +17,7 @@ var temp = [44, 35, 47, 42, 15, 30, 58, 37, 22, 19, 21, 27, 45, 12, 23, 21, 2, 2
 
 
 function setup() {
-  createCanvas(windowWidth, windowHeight); // create a large canvas
+  createCanvas(1000, 750); // create a large canvas
   fill(160); // grey color
 }
 
