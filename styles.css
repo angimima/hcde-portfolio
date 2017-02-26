@@ -45,3 +45,9 @@ p {
     font-size: 22px;
 }
 
+h1 a:link, a:visited {
+    text-decoration: none;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #40A798;
+}
