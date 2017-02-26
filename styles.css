@@ -1,0 +1,47 @@
+body {
+  background-color: #F1F1F1;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  width: 100%;
+}
+
+header {
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h1 {
+  color: #40A798;
+}
+
+p {
+  color: #476268;
+}
+
+.intro {
+  text-align: center;
+}
+
+.projects {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.section-wrapper {
+    width: 90%;
+    padding: 0 30px 40px 30px;
+    margin: 20px auto;
+}
+
+.section-wrapper h2 {
+    background: #555;
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.7);
+    border-radius: 20px 20px 0 0;
+    padding: 13px 20px;
+    font-size: 22px;
+}
+
