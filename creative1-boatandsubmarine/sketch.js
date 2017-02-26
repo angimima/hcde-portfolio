@@ -1,5 +1,5 @@
   /*  Created by Angela Rosette-Tavares
-    Program draws a boat and submarine and moves them across the screen. submarine drps periscope when boat gets close
+    Program draws a boat and submarine and moves them across the screen. Submarine drops periscope when boat gets close
     last edit 2/9/17 4:36pm
 */ 
 
@@ -26,7 +26,7 @@ function setup() {
 function draw() {
   background(121, 209, 236); // fill with light blue color
   image(img, 0, 290); // place underwater image on canvas
-  boat(xB, yB + random(-0.5, 0.5)); // call boat function and make boart jiggle
+  boat(xB, yB + random(-0.5, 0.5)); // call boat function and make boat jiggle
   submarine(xS, yS); // call submarine function
   periscope(xP, yP); // call periscope function
   xB = xB + 1; // to move the boat across the screen to the right

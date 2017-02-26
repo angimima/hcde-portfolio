@@ -3,14 +3,14 @@
     last edit 2/4/17 10:49am
 */ 
 
-function setup() {
-  createCanvas(800, 600);
-}
-
 var page = 0;
 var eyeDirection = 0;
 var jumpValue = 0;
 var jumpDir = -1;
+
+function setup() {
+  createCanvas(800, 600);
+}
 
 function draw() {
   background(255);
